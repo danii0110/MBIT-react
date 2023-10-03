@@ -1,0 +1,14 @@
+.container {
+  height: 100vh;
+  background-image: url('../assets/images/background-question.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 1fr 0.5fr 8.5fr;
+
+  .logo {
+    width: 160px;
+    object-fit: cover;
+    
+  }
+}
