@@ -1,0 +1,20 @@
+.button {
+  background-color: #14385d;
+  border: 1px solid #000000;
+  color: white;
+  font-family: 'Jua', sans-serif;
+  // padding: 0.35rem 0.75rem;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  //Todo : 효과 확인받기
+  //+option : border-color: #14385d;
+  background: #1d5389;
+  border-color: #ffffff;
+}
+
+.button:focus {
+  outline: none;
+}
