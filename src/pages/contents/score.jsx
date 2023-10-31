@@ -7,3 +7,5 @@ const score = [
     게임: 0,
   },
 ];
+
+export default score;

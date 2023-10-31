@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path='/' element={StartPage} />
-        <Route path='/test' element={<TestPage />} />
+        <Route path='/test/:id' element={<TestPage />} />
         <Route path='/result' element={<ResultPage />} />
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,38 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assets/images/background-test.png');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .progress {
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+    font-size: 30px;
+  }
+
+  .question {
+    display: flex;
+    justify-content: center;
+  }
+
+  .answers {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 25px;
+    .backBtn {
+      width: 107px;
+      height: 49px;
+    }
+    .nextBtn {
+      width: 107px;
+      height: 49px;
+    }
+  }
+}

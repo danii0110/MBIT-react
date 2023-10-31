@@ -1,4 +1,4 @@
-const question = [
+const questions = [
   {
     question: '대학생이라면 가장 듣고싶은 교양 과목은 ?',
     answer: [
@@ -254,4 +254,4 @@ const question = [
   },
 ];
 
-export default question;
+export default questions;

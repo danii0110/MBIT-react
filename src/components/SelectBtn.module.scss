@@ -1,6 +1,6 @@
 .button {
   color: black;
-  background-color: #d3e1ed;
+  background-color: #f5f5f5;
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.26);
 
   width: 338px;
@@ -21,7 +21,7 @@
 
 .button:hover,
 .button:active {
-  background: #658daf;
-  border-color: #658daf;
+  background: #d2d2d2;
+  border-color: #d2d2d2;
   box-shadow: 0 8px 14px rgba(0, 0, 0, 0.26);
 }
