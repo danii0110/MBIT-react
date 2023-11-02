@@ -1,7 +1,11 @@
 import classes from './SelectBtn.module.scss';
 
-const SelectBtn = (props) => {
-  return <div className={classes.button}>{props.children}</div>;
-};
+function SelectBtn(props) {
+  return (
+    <button type='button' onClick={props.handleOnClick} className={classes.button}>
+      {props.children}
+    </button>
+  );
+}
 
 export default SelectBtn;

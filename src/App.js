@@ -1,9 +1,7 @@
-// import logo from './logo.svg';
-// import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import StartPage from './StartPage';
 import TestPage from './pages/TestPage';
-import ResultPage from './ResultPage';
+import ResultPage from './pages/ResultPage';
 
 function App() {
   return (

@@ -6,6 +6,10 @@ const score = [
     데이터: 0,
     게임: 0,
   },
+  {
+    maxField: '',
+    maxScore: 0,
+  },
 ];
 
 export default score;

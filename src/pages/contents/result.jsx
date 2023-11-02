@@ -1,1 +1,9 @@
-//결과 넣는 파일
+const result = [
+    {
+        'field': '프론트',
+        'title': 'temp-title',
+        'img': '' 
+    }
+];
+
+export default result;
