@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// import { useParams, useNavigate } from 'react-router-dom';
 import { useParams, Link } from 'react-router-dom';
 
 import questions from './contents/questions';
@@ -9,15 +8,17 @@ import classes from './TestPage.module.scss';
 
 import backBtn from '../assets/images/backBtn.png';
 import nextBtn from '../assets/images/nextBtn.png';
+import submitBtn from '../assets/images/submitBtn.png';
 import SelectBtn from '../components/SelectBtn';
 
 function TestPage() {
   const num = useParams().id;
-  // const navigate = useNavigate();
 
   const [quiz, setQuiz] = useState({});
   const [id, setId] = useState(0);
   const [type, setType] = useState('');
+
+  // const [error, setError] = useState();
 
   useEffect(() => {
     // props 객체의 변경 감지(useEffect)
@@ -65,43 +66,24 @@ function TestPage() {
       <div className={classes.contents}>
         <div className={classes.progress}>
           {num}
-          /10
+          /12
         </div>
         <div className={classes.question}>{quiz.question}</div>
         <br />
-        {num < 10 && (
+        {num < 12 && (
           <div className={classes.answers}>
             {quiz.answer &&
               quiz.answer.map((item, index) => (
                 <Link to={`/test/${id}`} key={index}>
                   <SelectBtn handleOnClick={() => getScore(item.field)}>{item.text}</SelectBtn>
                 </Link>
-
-                // <SelectBtn
-                //   key={index}
-                //   handleOnClick={() => {
-                //     getScore(item.field);
-                //     navigate(`/test/${id}`);
-                //   }}
-                // >
-                //   {item.text}
-                // </SelectBtn>
               ))}
           </div>
         )}
-        {num === 10 && (
+        {num === 12 && (
           <div>
             {quiz.answer &&
               quiz.answer.map((item, index) => (
-                // <SelectBtn
-                //   key={index}
-                //   handleOnClick={() => {
-                //     getScore(item.field);
-                //     navigate(`/result/${type}`);
-                //   }}
-                // >
-                //   {item.text}
-                // </SelectBtn>
                 <Link to={`/result/${type}`} key={index}>
                   <SelectBtn handleOnClick={() => getScore(item.field)}>{item.text}</SelectBtn>
                 </Link>
@@ -110,8 +92,9 @@ function TestPage() {
         )}
       </div>
       <div className={classes.btn}>
-        <img className={classes.backBtn} src={backBtn} alt='..' />
-        <img className={classes.nextBtn} src={nextBtn} alt='..' />
+        <img className={classes.backBtn} src={backBtn} alt='back-button' />
+        {num < 12 && <img className={classes.nextBtn} src={nextBtn} alt='next-button' />}
+        {num == 12 && <img className={classes.nextBtn} src={submitBtn} alt='submit-button' />}
       </div>
     </div>
   );
