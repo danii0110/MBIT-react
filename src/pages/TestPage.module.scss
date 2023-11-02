@@ -7,38 +7,29 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
-  .contents {
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    margin-top: 100px;
-
-    .progress {
-      text-align: center;
-      font-family: 'Jua', sans-serif;
-      font-size: 30px;
-      color: #7e7e7e;
-      // margin-bottom: 20px;
-    }
-
-    .question {
-      text-align: center;
-      font-family: 'Jua', sans-serif;
-      font-size: 28px;
-      color: #14385d;
-      margin-top: 10px;
-    }
-
-    .answers {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  .progress {
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+    font-size: 30px;
+    color: #7e7e7e;
+    margin-top: 150px;
+    // margin-bottom: 20px;
   }
 
+  .question {
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+    font-size: 28px;
+    color: #14385d;
+    margin-top: 10px;
+  }
+
+  .answers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .btn {
     display: flex;
     flex-direction: row;

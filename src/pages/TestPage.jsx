@@ -23,8 +23,6 @@ function TestPage() {
   useEffect(() => {
     // props 객체의 변경 감지(useEffect)
     // const num = parseInt(props.params.id);
-    // console.log(num);
-    // console.log(id, type);
     const numAsInt = parseInt(num, 10);
     if (questions) {
       //!Number.isNaN(numAsInt)
@@ -63,34 +61,32 @@ function TestPage() {
 
   return (
     <div className={classes.container}>
-      <div className={classes.contents}>
-        <div className={classes.progress}>
-          {num}
-          /12
-        </div>
-        <div className={classes.question}>{quiz.question}</div>
-        <br />
-        {num < 12 && (
-          <div className={classes.answers}>
-            {quiz.answer &&
-              quiz.answer.map((item, index) => (
-                <Link to={`/test/${id}`} key={index}>
-                  <SelectBtn handleOnClick={() => getScore(item.field)}>{item.text}</SelectBtn>
-                </Link>
-              ))}
-          </div>
-        )}
-        {num === 12 && (
-          <div>
-            {quiz.answer &&
-              quiz.answer.map((item, index) => (
-                <Link to={`/result/${type}`} key={index}>
-                  <SelectBtn handleOnClick={() => getScore(item.field)}>{item.text}</SelectBtn>
-                </Link>
-              ))}
-          </div>
-        )}
+      <div className={classes.progress}>
+        {num}
+        /12
       </div>
+      <div className={classes.question}>{quiz.question}</div>
+      <br />
+      {num < 12 && (
+        <div className={classes.answers}>
+          {quiz.answer &&
+            quiz.answer.map((item, index) => (
+              <Link to={`/test/${id}`} key={index}>
+                <SelectBtn handleOnClick={() => getScore(item.field)}>{item.text}</SelectBtn>
+              </Link>
+            ))}
+        </div>
+      )}
+      {num == 12 && (
+        <div className={classes.answers}>
+          {quiz.answer &&
+            quiz.answer.map((item, index) => (
+              <Link to={`/result/${type}`} key={index}>
+                <SelectBtn handleOnClick={() => getScore(item.field)}>{item.text}</SelectBtn>
+              </Link>
+            ))}
+        </div>
+      )}
       <div className={classes.btn}>
         <img className={classes.backBtn} src={backBtn} alt='back-button' />
         {num < 12 && <img className={classes.nextBtn} src={nextBtn} alt='next-button' />}
@@ -101,3 +97,6 @@ function TestPage() {
 }
 
 export default TestPage;
+//TODO: 데이터 넘겨지는지 확인
+//TODO: 버튼 수정
+//TODO: 데이터 넘길 것들
