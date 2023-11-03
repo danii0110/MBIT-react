@@ -22,6 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://famous-rugelach-0f90d4.netlify.app",
   "eslintConfig": {
     "extends": [
       "react-app",

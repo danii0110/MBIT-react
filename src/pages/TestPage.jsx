@@ -6,10 +6,11 @@ import score from './contents/score';
 
 import classes from './TestPage.module.scss';
 
-import backBtn from '../assets/images/backBtn.png';
-import nextBtn from '../assets/images/nextBtn.png';
-import submitBtn from '../assets/images/submitBtn.png';
+// import backBtn from '../assets/images/backBtn.png';
+// import nextBtn from '../assets/images/nextBtn.png';
+// import submitBtn from '../assets/images/submitBtn.png';
 import SelectBtn from '../components/SelectBtn';
+import backArrow from '../assets/images/backArrow.png';
 
 function TestPage() {
   const num = useParams().id;
@@ -61,42 +62,52 @@ function TestPage() {
 
   return (
     <div className={classes.container}>
-      <div className={classes.progress}>
-        {num}
-        /12
-      </div>
-      <div className={classes.question}>{quiz.question}</div>
-      <br />
-      {num < 12 && (
-        <div className={classes.answers}>
-          {quiz.answer &&
-            quiz.answer.map((item, index) => (
-              <Link to={`/test/${id}`} key={index}>
-                <SelectBtn handleOnClick={() => getScore(item.field)}>{item.text}</SelectBtn>
-              </Link>
-            ))}
+      <div className={classes.top} />
+      <div className={classes.bottom}>
+        <img className={classes.backArrow} src={backArrow} alt='back-arrow' />
+        <div className={classes.progress}>
+          {num}
+          /12
         </div>
-      )}
-      {num == 12 && (
-        <div className={classes.answers}>
-          {quiz.answer &&
-            quiz.answer.map((item, index) => (
-              <Link to={`/result/${type}`} key={index}>
-                <SelectBtn handleOnClick={() => getScore(item.field)}>{item.text}</SelectBtn>
-              </Link>
-            ))}
+        <div className={classes.question}>
+          {(quiz.question || '').split('\n').map((line) => {
+            return (
+              <>
+                {line}
+                <br />
+              </>
+            );
+          })}
         </div>
-      )}
-      <div className={classes.btn}>
+        <br />
+        {num < 12 && (
+          <div className={classes.answers}>
+            {quiz.answer &&
+              quiz.answer.map((item, index) => (
+                <Link to={`/test/${id}`} key={index}>
+                  <SelectBtn handleOnClick={() => getScore(item.field)}>{item.text}</SelectBtn>
+                </Link>
+              ))}
+          </div>
+        )}
+        {num == 12 && (
+          <div className={classes.answers}>
+            {quiz.answer &&
+              quiz.answer.map((item, index) => (
+                <Link to={`/result/${type}`} key={index}>
+                  <SelectBtn handleOnClick={() => getScore(item.field)}>{item.text}</SelectBtn>
+                </Link>
+              ))}
+          </div>
+        )}
+        {/* <div className={classes.btn}>
         <img className={classes.backBtn} src={backBtn} alt='back-button' />
         {num < 12 && <img className={classes.nextBtn} src={nextBtn} alt='next-button' />}
         {num == 12 && <img className={classes.nextBtn} src={submitBtn} alt='submit-button' />}
+      </div> */}
       </div>
     </div>
   );
 }
 
 export default TestPage;
-//TODO: 데이터 넘겨지는지 확인
-//TODO: 버튼 수정
-//TODO: 데이터 넘길 것들
