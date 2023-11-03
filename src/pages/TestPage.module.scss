@@ -4,9 +4,7 @@
   background-image: url('../assets/images/background-test.png');
   background-position: center;
   background-repeat: no-repeat;
-  // background-size: contain;
-  background-size: auto;
-  // background-size: cover;
+  background-size: contain;
   -webkit-overflow-scrolling: touch; /* 스크롤 부드럽게 처리 */
 
   display: flex;
