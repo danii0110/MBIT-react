@@ -9,6 +9,7 @@ import classes from './TestPage.module.scss';
 // import backBtn from '../assets/images/backBtn.png';
 // import nextBtn from '../assets/images/nextBtn.png';
 // import submitBtn from '../assets/images/submitBtn.png';
+import logo from '../assets/images/logo.png';
 import SelectBtn from '../components/SelectBtn';
 import backArrow from '../assets/images/backArrow.png';
 
@@ -63,6 +64,9 @@ function TestPage() {
   return (
     <div className={classes.container}>
       <div className={classes.top} />
+      <div className={classes.logos}>
+        <img className={classes.logo} src={logo} alt='logo' />
+      </div>
       <div className={classes.bottom}>
         <img className={classes.backArrow} src={backArrow} alt='back-arrow' />
         <div className={classes.progress}>

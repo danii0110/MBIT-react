@@ -4,62 +4,72 @@
   background-image: url('../assets/images/background-test.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  // background-size: contain;
+  // background-size: auto;
+  background-size: cover;
 
   display: flex;
   flex-direction: column;
   .top {
-    flex: 13.8;
+    flex: 3.92;
   }
-
-  .bottom {
-    flex: 86.2;
-  }
-
-  .backArrow {
-    width: 30px;
-    height: 30px;
-    // margin-top: 17px;
-    // display: flex;
-    // justify-content: center;
-    // // flex-direction: row;
-    // justify-content: center;
-    // align-items: center;
-  }
-
-  .progress {
-    text-align: center;
-    font-family: 'Jua', sans-serif;
-    font-size: 30px;
-    color: #7e7e7e;
-    // margin-top: 180px;
-  }
-
-  .question {
-    text-align: center;
-    font-family: 'Jua', sans-serif;
-    font-size: 28px;
-    color: #14385d;
-    margin-top: 10px;
-  }
-
-  .answers {
+  .logos {
+    flex: 9.69;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+
+    .logo {
+      width: 160px;
+      height: 94px;
+    }
   }
-  // .btn {
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  //   margin: 19px 25px 0 25px;
-  //   .backBtn {
-  //     width: 107px;
-  //     height: 49px;
-  //   }
-  //   .nextBtn {
-  //     width: 107px;
-  //     height: 49px;
-  //   }
-  // }
+  .bottom {
+    flex: 86.39;
+
+    .backArrow {
+      width: 30px;
+      height: 30px;
+      // margin-top: 17px;
+      // display: flex;
+      // justify-content: center;
+      // // flex-direction: row;
+      // justify-content: center;
+      // align-items: center;
+    }
+    .progress {
+      text-align: center;
+      font-family: 'Jua', sans-serif;
+      font-size: 30px;
+      color: #7e7e7e;
+      // margin-top: 180px;
+    }
+
+    .question {
+      text-align: center;
+      font-family: 'Jua', sans-serif;
+      font-size: 28px;
+      color: #14385d;
+      margin-top: 10px;
+    }
+
+    .answers {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    // .btn {
+    //   display: flex;
+    //   flex-direction: row;
+    //   justify-content: space-between;
+    //   margin: 19px 25px 0 25px;
+    //   .backBtn {
+    //     width: 107px;
+    //     height: 49px;
+    //   }
+    //   .nextBtn {
+    //     width: 107px;
+    //     height: 49px;
+    //   }
+    // }
+  }
 }
