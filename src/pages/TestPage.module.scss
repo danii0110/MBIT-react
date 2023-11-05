@@ -2,9 +2,9 @@
   width: 100vw;
   height: 100vh;
   background-image: url('../assets/images/background-test.png');
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   -webkit-overflow-scrolling: touch; /* 스크롤 부드럽게 처리 */
 
   display: flex;
