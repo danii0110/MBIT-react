@@ -71,7 +71,7 @@ function TestPage() {
         <img className={classes.backArrow} src={backArrow} alt='back-arrow' />
         <div className={classes.progress}>
           {num}
-          /12
+          /10
         </div>
         <div className={classes.question}>
           {(quiz.question || '').split('\n').map((line) => {
@@ -84,7 +84,7 @@ function TestPage() {
           })}
         </div>
         <br />
-        {num < 12 && (
+        {num < 10 && (
           <div className={classes.answers}>
             {quiz.answer &&
               quiz.answer.map((item, index) => (
@@ -94,7 +94,7 @@ function TestPage() {
               ))}
           </div>
         )}
-        {num == 12 && (
+        {num == 10 && (
           <div className={classes.answers}>
             {quiz.answer &&
               quiz.answer.map((item, index) => (
