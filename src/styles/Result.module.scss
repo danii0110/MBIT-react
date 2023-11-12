@@ -3,6 +3,39 @@
 }
 
 .Result_FE {
+  position: relative;
+  margin: 0 auto;
+  width: 430px;
+  height: 1879px;
+  background-image: url("../assets/images/backGround\(Result\).svg");
+}
+
+.Result_DS {
+  position: relative;
+  margin: 0 auto;
+  width: 430px;
+  height: 1879px;
+  background-image: url("../assets/images/backGround\(Result\).svg");
+}
+
+.Result_BE {
+  position: relative;
+  margin: 0 auto;
+  width: 430px;
+  height: 1879px;
+  background-image: url("../assets/images/backGround\(Result\).svg");
+}
+
+.Result_Game {
+  position: relative;
+  margin: 0 auto;
+  width: 430px;
+  height: 1879px;
+  background-image: url("../assets/images/backGround\(Result\).svg");
+}
+
+.Result_Security {
+  position: relative;
   margin: 0 auto;
   width: 430px;
   height: 1879px;
@@ -18,6 +51,7 @@
 .social {
   margin-bottom: 59px;
 }
+
 .social p {
   font-family: Jua;
   font-size: 25px;
@@ -31,4 +65,30 @@
 .icons {
   display: flex;
   justify-content: space-evenly;
+}
+
+.icons img {
+  cursor: pointer;
+}
+
+.donutChart {
+  font-family: IBM Plex Sans KR;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 37.5px;
+  color: #14385d;
+}
+
+.collectionBtn {
+  position: absolute;
+  top: 1764px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.retryBtn {
+  position: absolute;
+  top: 1764px;
+  left: 243px;
+  cursor: pointer;
 }
