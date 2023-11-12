@@ -1,10 +1,10 @@
 import style from "../styles/Result_explain.module.scss";
 
-function FE_explain() {
+function BE_explain() {
   return (
-    <div className={style.FE_explain}>
+    <div className={style.BE_explain}>
       <p className={style.develop}>
-        <span>프론트엔드</span>개발자가 된다면?
+        <span>백엔드</span>개발자가 된다면?
       </p>
       <ul>
         <li className={style.listItem}>
@@ -23,4 +23,4 @@ function FE_explain() {
   );
 }
 
-export default FE_explain;
+export default BE_explain;
