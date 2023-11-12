@@ -17,8 +17,6 @@ function TestPage() {
   const [id, setId] = useState(0);
   const [type, setType] = useState('');
 
-  // const [error, setError] = useState();
-
   useEffect(() => {
     // props 객체의 변경 감지(useEffect)
     // const num = parseInt(props.params.id);

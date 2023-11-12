@@ -1,30 +1,28 @@
 .background {
-  background-color: red;
+  background-color: #f1f2f4;
   margin: 0;
   display: flex;
   justify-content: center;
+  min-height: 100%;
 }
 
 .container {
-  // width: 100vw;
-  max-width: 600px;
+  max-width: 430px;
   height: 100vh;
   background-image: url('../assets/images/background-test.png');
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  // background-size: contain;
-  -webkit-overflow-scrolling: touch; /* 스크롤 부드럽게 처리 */
 
   display: flex;
   flex-direction: column;
   .top {
-    flex: 3.92;
+    margin-top: 28px;
   }
   .logos {
-    flex: 9.69;
     display: flex;
     justify-content: center;
+    width: 100%;
 
     .logo {
       width: 160px;
@@ -32,24 +30,17 @@
     }
   }
   .bottom {
-    flex: 86.39;
-
+    margin-top: 20px;
     .backArrow {
       width: 30px;
       height: 30px;
-      // margin-top: 17px;
-      // display: flex;
-      // justify-content: center;
-      // // flex-direction: row;
-      // justify-content: center;
-      // align-items: center;
+      margin-left: 30px;
     }
     .progress {
       text-align: center;
       font-family: 'Jua', sans-serif;
       font-size: 30px;
       color: #7e7e7e;
-      // margin-top: 180px;
     }
 
     .question {
@@ -65,19 +56,5 @@
       flex-direction: column;
       align-items: center;
     }
-    // .btn {
-    //   display: flex;
-    //   flex-direction: row;
-    //   justify-content: space-between;
-    //   margin: 19px 25px 0 25px;
-    //   .backBtn {
-    //     width: 107px;
-    //     height: 49px;
-    //   }
-    //   .nextBtn {
-    //     width: 107px;
-    //     height: 49px;
-    //   }
-    // }
   }
 }
