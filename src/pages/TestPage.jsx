@@ -6,9 +6,6 @@ import score from './contents/score';
 
 import classes from './TestPage.module.scss';
 
-// import backBtn from '../assets/images/backBtn.png';
-// import nextBtn from '../assets/images/nextBtn.png';
-// import submitBtn from '../assets/images/submitBtn.png';
 import logo from '../assets/images/logo.png';
 import SelectBtn from '../components/SelectBtn';
 import backArrow from '../assets/images/backArrow.png';
@@ -62,53 +59,50 @@ function TestPage() {
   };
 
   return (
-    <div className={classes.container}>
-      <div className={classes.top} />
-      <div className={classes.logos}>
-        <img className={classes.logo} src={logo} alt='logo' />
-      </div>
-      <div className={classes.bottom}>
-        <img className={classes.backArrow} src={backArrow} alt='back-arrow' />
-        <div className={classes.progress}>
-          {num}
-          /10
+    <div className={classes.background}>
+      <div className={classes.container}>
+        <div className={classes.top} />
+        <div className={classes.logos}>
+          <img className={classes.logo} src={logo} alt='logo' />
         </div>
-        <div className={classes.question}>
-          {(quiz.question || '').split('\n').map((line) => {
-            return (
-              <>
-                {line}
-                <br />
-              </>
-            );
-          })}
+        <div className={classes.bottom}>
+          <img className={classes.backArrow} src={backArrow} alt='back-arrow' />
+          <div className={classes.progress}>
+            {num}
+            /10
+          </div>
+          <div className={classes.question}>
+            {(quiz.question || '').split('\n').map((line) => {
+              return (
+                <>
+                  {line}
+                  <br />
+                </>
+              );
+            })}
+          </div>
+          <br />
+          {num < 10 && (
+            <div className={classes.answers}>
+              {quiz.answer &&
+                quiz.answer.map((item, index) => (
+                  <Link to={`/test/${id}`} key={index}>
+                    <SelectBtn handleOnClick={() => getScore(item.field)}>{item.text}</SelectBtn>
+                  </Link>
+                ))}
+            </div>
+          )}
+          {num == 10 && (
+            <div className={classes.answers}>
+              {quiz.answer &&
+                quiz.answer.map((item, index) => (
+                  <Link to={`/result/${type}`} key={index}>
+                    <SelectBtn handleOnClick={() => getScore(item.field)}>{item.text}</SelectBtn>
+                  </Link>
+                ))}
+            </div>
+          )}
         </div>
-        <br />
-        {num < 10 && (
-          <div className={classes.answers}>
-            {quiz.answer &&
-              quiz.answer.map((item, index) => (
-                <Link to={`/test/${id}`} key={index}>
-                  <SelectBtn handleOnClick={() => getScore(item.field)}>{item.text}</SelectBtn>
-                </Link>
-              ))}
-          </div>
-        )}
-        {num == 10 && (
-          <div className={classes.answers}>
-            {quiz.answer &&
-              quiz.answer.map((item, index) => (
-                <Link to={`/result/${type}`} key={index}>
-                  <SelectBtn handleOnClick={() => getScore(item.field)}>{item.text}</SelectBtn>
-                </Link>
-              ))}
-          </div>
-        )}
-        {/* <div className={classes.btn}>
-        <img className={classes.backBtn} src={backBtn} alt='back-button' />
-        {num < 12 && <img className={classes.nextBtn} src={nextBtn} alt='next-button' />}
-        {num == 12 && <img className={classes.nextBtn} src={submitBtn} alt='submit-button' />}
-      </div> */}
       </div>
     </div>
   );

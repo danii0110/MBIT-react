@@ -1,10 +1,19 @@
+.background {
+  background-color: red;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
 .container {
-  width: 100vw;
+  // width: 100vw;
+  max-width: 600px;
   height: 100vh;
   background-image: url('../assets/images/background-test.png');
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  // background-size: contain;
   -webkit-overflow-scrolling: touch; /* 스크롤 부드럽게 처리 */
 
   display: flex;
