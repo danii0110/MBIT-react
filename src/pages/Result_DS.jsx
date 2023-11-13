@@ -1,9 +1,9 @@
 import Default from "../styles/Result.module.scss";
 import logoImg from "../assets/images/logo.svg";
-import FE_top from "../components/FE_top";
-import FE_illust from "../components/FE_illust";
-import FE_explain from "../components/FE_explain";
-import FE_stack from "../components/FE_stack";
+import DS_top from "../components/DS_top";
+import DS_illust from "../components/DS_illust";
+import DS_explain from "../components/DS_explain";
+import DS_stack from "../components/DS_stack";
 
 import kakao from "../assets/images/kakao.svg";
 import insta from "../assets/images/Instagram.svg";
@@ -11,15 +11,15 @@ import social_default from "../assets/images/ordinary.svg";
 import collectionBtn from "../assets/images/collectionBtn.svg";
 import retryBtn from "../assets/images/retryBtn.svg";
 
-function Result_FE() {
+function Result_DS() {
   return (
-    <div className={Default.Result_FE}>
+    <div className={Default.Result_DS}>
       <div className={Default.logoArea}>
         <img src={logoImg} alt="로고" />
       </div>
 
-      <FE_top />
-      <FE_illust />
+      <DS_top />
+      <DS_illust />
 
       <div className={Default.social}>
         <p>공유하기</p>
@@ -30,8 +30,8 @@ function Result_FE() {
         </div>
       </div>
 
-      <FE_explain />
-      <FE_stack />
+      <DS_explain />
+      <DS_stack />
 
       <div className={Default.donutChart}>
         <p>참여자의 %가 나와 같은 유형이에요 !</p>
@@ -47,4 +47,4 @@ function Result_FE() {
   );
 }
 
-export default Result_FE;
+export default Result_DS;

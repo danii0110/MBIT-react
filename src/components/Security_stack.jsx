@@ -1,8 +1,8 @@
 import style from "../styles/Result_stack.module.scss";
 
-function FE_stack() {
+function Security_stack() {
   return (
-    <div className={style.FE_stack}>
+    <div className={style.Security_stack}>
       <p className={style.title}>추천 기술 스택</p>
       <div className="stacks">
         <img src="" alt="" />
@@ -13,4 +13,4 @@ function FE_stack() {
   );
 }
 
-export default FE_stack;
+export default Security_stack;
