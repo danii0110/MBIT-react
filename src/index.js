@@ -5,11 +5,13 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import Main from "./pages/Main";
+import Result_BE from "./pages/Result_BE";
+import Loading from "./pages/Loading";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Main />
+    <Result_BE />
   </React.StrictMode>
 );
 

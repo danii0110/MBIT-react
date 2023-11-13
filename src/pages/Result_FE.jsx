@@ -11,6 +11,8 @@ import social_default from "../assets/images/ordinary.svg";
 import collectionBtn from "../assets/images/collectionBtn.svg";
 import retryBtn from "../assets/images/retryBtn.svg";
 
+import axios from "axios";
+
 function Result_FE() {
   return (
     <div className={Default.Result_FE}>
