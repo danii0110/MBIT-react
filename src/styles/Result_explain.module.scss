@@ -3,7 +3,7 @@
 }
 
 .BE_explain {
-  margin-bottom: 81px;
+  margin-bottom: 65px;
 }
 
 .DS_explain {
@@ -11,7 +11,7 @@
 }
 
 .Game_explain {
-  margin-bottom: 81px;
+  margin-bottom: 31px;
 }
 
 .Security_explain {
@@ -25,7 +25,7 @@
   line-height: 48px;
   letter-spacing: 0em;
   color: #14385d;
-  // margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .listItem {
@@ -42,4 +42,8 @@ ul {
   padding-left: 0;
   display: inline-block;
   margin: 20px auto 0px auto;
+}
+
+li:last-child {
+  padding-bottom: 0px;
 }

@@ -1,5 +1,5 @@
 import style from "../styles/Result_illust.module.scss";
-import Security from "../assets/images/result(Security).svg";
+import Security from "../assets/images/Result(Security).svg";
 
 function Security_illust() {
   return (

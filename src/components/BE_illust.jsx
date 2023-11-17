@@ -1,5 +1,5 @@
 import style from "../styles/Result_illust.module.scss";
-import Be from "../assets/images/result(Be).svg";
+import Be from "../assets/images/Result(Be).svg";
 
 function BE_illust() {
   return (

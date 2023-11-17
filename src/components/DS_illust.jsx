@@ -1,5 +1,5 @@
 import style from "../styles/Result_illust.module.scss";
-import Ds from "../assets/images/result(Ds).svg";
+import Ds from "../assets/images/Result(Ds).svg";
 
 function DS_illust() {
   return (
