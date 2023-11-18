@@ -6,13 +6,13 @@
   background-image: url("../assets/images/background\(Fixed\).svg");
 }
 
-.logoArea {
-  padding-top: 113px;
-  margin-bottom: 54px;
+.logoArea img {
+  width: 160px;
+  height: 94px;
+  padding-top: 38px;
 }
 
 p {
-  position: absolute;
   font-family: IBM Plex Sans KR;
   font-size: 20px;
   line-height: 24.2px;
@@ -21,6 +21,7 @@ p {
 }
 
 span {
+  font-family: IBM Plex Sans KR;
   color: white;
   background-color: #14385d;
   width: 179px;
@@ -30,18 +31,87 @@ span {
   padding: 2.5px;
 }
 
-.Backend {
-  top: 188px;
-  left: 48px;
+.Row1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 29px;
+  margin-bottom: 37px;
 }
 
-.Frontend {
-}
-.Datascientist {
-}
-
-.Security {
+.Row2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 35px;
 }
 
-.Game {
+.BeImg {
+  width: 190px;
+  height: 140px;
+  transition: transform 0.3s ease;
+}
+
+.BeImg:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.FeImg:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.DsImg:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.SecurityImg:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.FeImg {
+  width: 170px;
+  height: 110px;
+  transition: transform 0.3s ease;
+}
+
+.DsImg {
+  width: 170px;
+  height: 180px;
+  transition: transform 0.3s ease;
+}
+
+.SecurityImg {
+  width: 140px;
+  height: 170px;
+  transition: transform 0.3s ease;
+}
+
+.GameImg {
+  width: 120px;
+  height: 190px;
+  transition: transform 0.3s ease;
+}
+
+.GameImg:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.BeP {
+  margin-bottom: 12px;
+}
+
+.FeP {
+  margin-bottom: 42px;
+}
+
+.DsP {
+  margin-bottom: 28px;
+}
+
+.SecurityP {
+  margin-bottom: 38px;
+}
+
+.GameP {
+  margin-bottom: 21px;
 }
