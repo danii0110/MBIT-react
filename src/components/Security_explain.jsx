@@ -4,19 +4,20 @@ function Security_explain() {
   return (
     <div className={style.Security_explain}>
       <p className={style.develop}>
-        <span>데이터 사이언티스트</span>가 된다면?
+        <span>보안 엔지니어</span>가 된다면?
       </p>
       <ul>
         <li className={style.listItem}>
-          사용자가 눈으로 보는 영역(UI)을 구축 <br />
-          하고, 기능을 구현해요.
+          시스템과 네트워크에 대한 취약점을 분<br />
+          석하고 이를 보완해요.
         </li>
         <li className={style.listItem}>
-          사용자가 서비스에서 겪는 경험(UX)을 <br />
-          구현하고 편리하게 개선해요.
+          보안 정책, 접근 제어, 암호화, 방화벽
+          <br /> 등 보안 인프라를 강화해요.
         </li>
         <li className={style.listItem}>
-          디자이너와 협업하여 서비스의 시각적 <br />인 부분을 담당해요.
+          보안 사고에 대응하고 조사를 통해 재발
+          <br />을 방지해요.
         </li>
       </ul>
     </div>

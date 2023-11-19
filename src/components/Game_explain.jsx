@@ -8,15 +8,19 @@ function Game_explain() {
       </p>
       <ul>
         <li className={style.listItem}>
-          사용자가 눈으로 보는 영역(UI)을 구축 <br />
-          하고, 기능을 구현해요.
+          2D 또는 3D 그래픽, 캐릭터 디자인, 애<br />
+          니메이션 효과 등 게임의 그래픽 요소를
+          <br /> 개발해요.
         </li>
         <li className={style.listItem}>
-          사용자가 서비스에서 겪는 경험(UX)을 <br />
-          구현하고 편리하게 개선해요.
+          게임 플레이를 테스트하여 버그를 찾고
+          <br /> 수정하는 작업을 수행해요.
         </li>
         <li className={style.listItem}>
-          디자이너와 협업하여 서비스의 시각적 <br />인 부분을 담당해요.
+          게임 디자이너, 아티스트, 프로듀서 등<br />
+          다양한 분야의 전문가와 협력하여 프로
+          <br />
+          젝트를 관리해요.
         </li>
       </ul>
     </div>

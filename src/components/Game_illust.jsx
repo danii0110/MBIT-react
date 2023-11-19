@@ -1,5 +1,5 @@
 import style from "../styles/Result_illust.module.scss";
-import Game from "../assets/images/result(Game).svg";
+import Game from "../assets/images/Result(Game).svg";
 
 function Game_illust() {
   return (

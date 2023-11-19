@@ -6,3 +6,57 @@
   letter-spacing: 0em;
   color: #14385d;
 }
+
+// .FE_stack .stacks img.firstThree {
+//   margin-top: -10px;
+// }
+
+.FE_stack {
+  margin-bottom: 7px;
+}
+
+.FE_stack .stacks {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.BE_stack {
+  margin-bottom: 7px;
+}
+
+.BE_stack .stacks {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.DS_stack {
+  margin-bottom: 7px;
+}
+
+.DS_stack .stacks {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Security_stack {
+  margin-bottom: 7px;
+}
+
+.Security_stack .stacks {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Game_stack {
+  margin-bottom: 7px;
+}
+
+.Game_stack .stacks {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-evenly;
+}

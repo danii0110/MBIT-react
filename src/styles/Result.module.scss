@@ -48,6 +48,115 @@
   padding-top: 38px;
 }
 
+.FEsummary {
+  position: absolute;
+  top: 301px;
+  left: 228px;
+  font-family: IBM Plex Sans KR;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1e1e1e;
+}
+
+.FEsummary ul {
+  list-style-type: none;
+}
+
+.FEsummary ul li {
+  color: #1e1e1e;
+  text-align: left;
+}
+
+.BEsummary {
+  position: absolute;
+  top: 305px;
+  left: 271px;
+  font-family: IBM Plex Sans KR;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1e1e1e;
+}
+
+.BEsummary ul {
+  list-style-type: none;
+}
+
+.BEsummary ul li {
+  color: #1e1e1e;
+  text-align: left;
+}
+
+.DSsummary {
+  position: absolute;
+  top: 520px;
+  left: 287px;
+  font-family: IBM Plex Sans KR;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1e1e1e;
+}
+
+.DSsummary ul {
+  list-style-type: none;
+}
+
+.DSsummary ul li {
+  color: #1e1e1e;
+  text-align: left;
+}
+
+.Security_summary {
+  position: absolute;
+  top: 550px;
+  left: 302px;
+  font-family: IBM Plex Sans KR;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1e1e1e;
+}
+
+.Security_summary ul {
+  list-style-type: none;
+}
+
+.Security_summary ul li {
+  color: #1e1e1e;
+  text-align: left;
+}
+
+.Game_summary {
+  position: absolute;
+  top: 575px;
+  left: 37px;
+  font-family: IBM Plex Sans KR;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1e1e1e;
+}
+
+.Game_summary ul {
+  list-style-type: none;
+}
+
+.Game_summary ul li {
+  color: #1e1e1e;
+  text-align: left;
+}
 .social {
   margin-bottom: 59px;
 }
@@ -71,12 +180,16 @@
   cursor: pointer;
 }
 
-.donutChart {
+.percent {
   font-family: IBM Plex Sans KR;
   font-size: 25px;
   font-weight: 700;
   line-height: 37.5px;
   color: #14385d;
+}
+.donutChart {
+  width: 300px;
+  margin: 0 auto;
 }
 
 .collectionBtn {

@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+.Staff {
+  margin: 0 auto;
+  text-align: center;
+  width: 430px;
+  height: 932px;
+  background-image: url("../assets/images/background\(Fixed\).svg");
+  position: relative;
+}
+
+.logoArea {
+  padding-top: 113px;
+}
+
+p {
+  font-family: Jua;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  color: #14385d;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 102px;
+}
+
+li {
+  font-family: IBM Plex Sans KR;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0em;
+  color: #1e1e1e;
+  text-align: left;
+}
+
+.Be {
+  margin-top: 65px;
+}
+
+.Fe {
+  margin-top: 66px;
+}
+
+.Design {
+  margin-top: 56px;
+}
