@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 import questions from './contents/questions';
 import score from './contents/score';
@@ -11,6 +11,7 @@ import SelectBtn from '../components/SelectBtn';
 import backArrow from '../assets/images/backArrow.png';
 
 function TestPage() {
+  const navigate = useNavigate();
   const num = useParams().id;
 
   const [quiz, setQuiz] = useState({});
@@ -76,9 +77,16 @@ function TestPage() {
             <div className={classes.answers}>
               {quiz.answer &&
                 quiz.answer.map((item, index) => (
-                  <Link to={`/test/${id}`} key={index}>
-                    <SelectBtn handleOnClick={() => getScore(item.field)}>{item.text}</SelectBtn>
-                  </Link>
+                  <div key={index}>
+                    <SelectBtn
+                      handleOnClick={() => {
+                        getScore(item.field);
+                        navigate(`/test/${id}`);
+                      }}
+                    >
+                      {item.text}
+                    </SelectBtn>
+                  </div>
                 ))}
             </div>
           )}
@@ -86,9 +94,16 @@ function TestPage() {
             <div className={classes.answers}>
               {quiz.answer &&
                 quiz.answer.map((item, index) => (
-                  <Link to={`/result/${type}`} key={index}>
-                    <SelectBtn handleOnClick={() => getScore(item.field)}>{item.text}</SelectBtn>
-                  </Link>
+                  <div key={index}>
+                    <SelectBtn
+                      handleOnClick={() => {
+                        getScore(item.field);
+                        navigate(`/result/${type}`);
+                      }}
+                    >
+                      {item.text}
+                    </SelectBtn>
+                  </div>
                 ))}
             </div>
           )}
