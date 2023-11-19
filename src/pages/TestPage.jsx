@@ -49,6 +49,18 @@ function TestPage() {
     }
   };
 
+  // async function updateUserField(type) {
+  //   const response = fetch('http://localhost:3000/pychart/mbits/', {
+  //     method: 'POST',
+  //     body: JSON.stringify(type),
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //   });
+  //   const data = await response.json();
+  //   console.log(data);
+  // }
+
   return (
     <div className={classes.background}>
       <div className={classes.container}>
@@ -99,6 +111,7 @@ function TestPage() {
                       handleOnClick={() => {
                         getScore(item.field);
                         navigate(`/result/${type}`);
+                        //updateUserField();
                       }}
                     >
                       {item.text}
