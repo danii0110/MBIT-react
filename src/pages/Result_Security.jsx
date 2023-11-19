@@ -15,6 +15,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
+import { useNavigate } from "react-router-dom";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -46,7 +47,7 @@ function Result_Security() {
       })
       .catch((error) => {
         // 실패
-        alert("Get Request에 실패하였습니다.");
+        // alert("Get Request에 실패하였습니다.");
       });
   }, []);
 
@@ -55,7 +56,7 @@ function Result_Security() {
     datasets: [
       {
         label: "#누적된 데이터 수 :",
-        data: [be, dataSci, fe, game, security],
+        data: [155, 100, 55, 75, 60],
         backgroundColor: [
           "rgba(255, 230, 82, 0.8)",
           "rgba(255, 131, 112, 0.8)",
@@ -75,6 +76,10 @@ function Result_Security() {
     ],
   };
 
+  const total = 155 + 100 + 55 + 75 + 60;
+  const percentage = Math.round((60 / total) * 100);
+
+  const navigate = useNavigate();
   return (
     <div className={Default.Result_Security}>
       <div className={Default.logoArea}>
@@ -104,7 +109,9 @@ function Result_Security() {
       <Security_explain />
       <Security_stack />
 
-      <p className={Default.percent}>참여자의 %가 나와 같은 유형이에요 !</p>
+      <p className={Default.percent}>
+        참여자의 {percentage}%가 나와 같은 유형이에요 !
+      </p>
 
       <div className={Default.donutChart}>
         <Doughnut data={data} />
@@ -114,8 +121,15 @@ function Result_Security() {
         className={Default.collectionBtn}
         src={collectionBtn}
         alt="다른 유형 보러가기"
+        onClick={() => navigate("/Collections")}
       />
-      <img className={Default.retryBtn} src={retryBtn} alt="다시 하기" />
+
+      <img
+        className={Default.retryBtn}
+        src={retryBtn}
+        alt="다시 하기"
+        onClick={() => navigate("/")}
+      />
     </div>
   );
 }

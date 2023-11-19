@@ -51,7 +51,7 @@
 .FEsummary {
   position: absolute;
   top: 301px;
-  left: 228px;
+  left: 235px;
   font-family: IBM Plex Sans KR;
   font-size: 25px;
   font-weight: 700;
@@ -68,6 +68,11 @@
 .FEsummary ul li {
   color: #1e1e1e;
   text-align: left;
+  font-family: IBM Plex Sans KR;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
 }
 
 .BEsummary {
@@ -90,6 +95,11 @@
 .BEsummary ul li {
   color: #1e1e1e;
   text-align: left;
+  font-family: IBM Plex Sans KR;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
 }
 
 .DSsummary {
@@ -112,11 +122,16 @@
 .DSsummary ul li {
   color: #1e1e1e;
   text-align: left;
+  font-family: IBM Plex Sans KR;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
 }
 
 .Security_summary {
   position: absolute;
-  top: 550px;
+  top: 523px;
   left: 302px;
   font-family: IBM Plex Sans KR;
   font-size: 25px;
@@ -134,11 +149,16 @@
 .Security_summary ul li {
   color: #1e1e1e;
   text-align: left;
+  font-family: IBM Plex Sans KR;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
 }
 
 .Game_summary {
   position: absolute;
-  top: 575px;
+  top: 525px;
   left: 37px;
   font-family: IBM Plex Sans KR;
   font-size: 25px;
@@ -156,6 +176,11 @@
 .Game_summary ul li {
   color: #1e1e1e;
   text-align: left;
+  font-family: IBM Plex Sans KR;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
 }
 .social {
   margin-bottom: 59px;
@@ -186,6 +211,7 @@
   font-weight: 700;
   line-height: 37.5px;
   color: #14385d;
+  margin-bottom: 15px;
 }
 .donutChart {
   width: 300px;

@@ -22,12 +22,12 @@ p {
   line-height: 30px;
   letter-spacing: 0em;
   color: #14385d;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 ul {
   list-style: none;
-  padding-left: 102px;
+  padding-left: 0px;
 }
 
 li {
@@ -45,9 +45,19 @@ li {
 }
 
 .Fe {
-  margin-top: 66px;
+  margin-top: 50px;
 }
 
 .Design {
   margin-top: 56px;
+}
+
+.Back {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+}
+
+.Back:hover {
+  cursor: pointer;
 }

@@ -9,6 +9,7 @@ const pStyle = {
   lineHeight: "30px",
   letterSpacing: "0em",
   marginTop: "66.81px",
+  marginBottom: "10px",
 };
 
 function Loading() {
