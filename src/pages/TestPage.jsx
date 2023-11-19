@@ -18,29 +18,21 @@ function TestPage() {
   const [type, setType] = useState('');
 
   useEffect(() => {
-    // props 객체의 변경 감지(useEffect)
-    // const num = parseInt(props.params.id);
     const numAsInt = parseInt(num, 10);
     if (questions) {
-      //!Number.isNaN(numAsInt)
-      // questions 변수가 존재하는지 확인
-      setQuiz(questions[numAsInt - 1]); // 인덱스에 해당하는 퀴즈 데이터를 quiz 상태 변수에 설정
-      setId(numAsInt + 1); // 다음 질문 번호 설정
+      setQuiz(questions[numAsInt - 1]);
+      setId(numAsInt + 1);
     }
-  }, [num]); // 이 useEffect 블록은 props 객체의 변경에 대응하여 실행됨
+  }, [num]);
 
   const getScore = (arr) => {
-    let scoreNum = 5; // 각 답변 항목에 부여할 초기 점수
+    let scoreNum = 5;
     arr.map((field) => {
       score[0][field] = +score[0][field] + scoreNum;
-      // 현재 답변 항목(field)에 대한 점수를 업데이트, 해당 답변 항목의 점수를 현재의 값에서 scoreNum만큼 증가
-      scoreNum -= 1; // 다음 답변 항목에 부여할 초기 점수가 1 감소
+      scoreNum -= 1;
       if (score[0][field] > +score[1].maxScore) {
-        // 현재 답변 항목의 점수가 최고 점수보다 높은지를 확인
         score[1].maxScore = score[0][field];
-        // 만약 현재 답변 항목의 점수가 최고 점수보다 높다면, 최고 점수를 업데이트. score[1].maxScore에 현재 답변 항목의 점수를 설정
         score[1].maxField = field;
-        // 최고 점수를 받은 분야의 이름을 score[1].maxField에 설정. 나중에 결과 페이지로 이동할 때 어떤 분야의 결과를 표시할지 결정하는데 사용됨
       }
     });
     if (score[1].maxField === '프론트') {
