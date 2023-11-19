@@ -1,20 +1,20 @@
-import Default from "../styles/Result.module.scss";
-import logoImg from "../assets/images/logo.svg";
-import Game_top from "../components/Game_top";
-import Game_illust from "../components/Game_illust";
-import Game_explain from "../components/Game_explain";
-import Game_stack from "../components/Game_stack";
+import Default from '../styles/Result.module.scss';
+import logoImg from '../assets/images/logo.svg';
+import Game_top from '../components/Game_top';
+import Game_illust from '../components/Game_illust';
+import Game_explain from '../components/Game_explain';
+import Game_stack from '../components/Game_stack';
 
-import kakao from "../assets/images/kakao.svg";
-import insta from "../assets/images/Instagram.svg";
-import social_default from "../assets/images/ordinary.svg";
-import collectionBtn from "../assets/images/collectionBtn.svg";
-import retryBtn from "../assets/images/retryBtn.svg";
+import kakao from '../assets/images/kakao.svg';
+import insta from '../assets/images/Instagram.svg';
+import social_default from '../assets/images/ordinary.svg';
+import collectionBtn from '../assets/images/collectionBtn.svg';
+import retryBtn from '../assets/images/retryBtn.svg';
 
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
-import { Doughnut } from "react-chartjs-2";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Doughnut } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -24,7 +24,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 function Result_Game() {
   const [be, setBe] = useState([]);
-  const [dataSci, setData] = useState([]);
+  const [data, setData] = useState([]);
   const [fe, setFe] = useState([]);
   const [game, setGame] = useState([]);
   const [security, setSecurity] = useState([]);
@@ -32,7 +32,7 @@ function Result_Game() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/pychart/mbits/")
+      .get('http://localhost:8000/pychart/mbits/')
       .then((response) => {
         // 성공
         const responseData = response.data;
@@ -46,14 +46,14 @@ function Result_Game() {
       })
       .catch((error) => {
         // 실패
-        alert("Get Request에 실패하였습니다.");
+        alert('Get Request에 실패하였습니다.');
       });
   }, []);
 
   return (
     <div className={Default.Result_Game}>
       <div className={Default.logoArea}>
-        <img src={logoImg} alt="로고" />
+        <img src={logoImg} alt='로고' />
       </div>
 
       <Game_top />
@@ -70,9 +70,9 @@ function Result_Game() {
       <div className={Default.social}>
         <p>공유하기</p>
         <div className={Default.icons}>
-          <img src={kakao} alt="카카오톡 공유" />
-          <img src={insta} alt="인스타그램 공유" />
-          <img src={social_default} alt="URL 공유" />
+          <img src={kakao} alt='카카오톡 공유' />
+          <img src={insta} alt='인스타그램 공유' />
+          <img src={social_default} alt='URL 공유' />
         </div>
       </div>
 
@@ -85,12 +85,8 @@ function Result_Game() {
         <Doughnut data={data} />
       </div>
 
-      <img
-        className={Default.collectionBtn}
-        src={collectionBtn}
-        alt="다른 유형 보러가기"
-      />
-      <img className={Default.retryBtn} src={retryBtn} alt="다시 하기" />
+      <img className={Default.collectionBtn} src={collectionBtn} alt='다른 유형 보러가기' />
+      <img className={Default.retryBtn} src={retryBtn} alt='다시 하기' />
     </div>
   );
 }

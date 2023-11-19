@@ -1,8 +1,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-// import StartPage from './StartPage';
 import TestPage from './pages/TestPage';
 import Main from './pages/Main';
-// import ResultPage from './pages/ResultPage';
+import Result_FE from './pages/Result_FE';
+import Result_BE from './pages/Result_BE';
+import Result_DS from './pages/Result_DS';
+import Result_Game from './pages/Result_Game';
+import Result_Security from './pages/Result_Security';
 
 function App() {
   return (
@@ -10,7 +13,11 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Main />} />
         <Route path='/test/:id' element={<TestPage />} />
-        {/* <Route path='/result' element={<ResultPage />} /> */}
+        <Route path='/result/front' element={<Result_FE />} />
+        <Route path='/result/back' element={<Result_BE />} />
+        <Route path='/result/data' element={<Result_DS />} />
+        <Route path='/result/game' element={<Result_Game />} />
+        <Route path='/result/security' element={<Result_Security />} />
       </Routes>
     </BrowserRouter>
   );

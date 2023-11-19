@@ -1,10 +1,10 @@
 import style from '../styles/Main.module.scss';
 import logoImg from '../assets/images/indexLogo.svg';
 import Fe from '../assets/images/result(Fe).svg';
-import Be from '../assets/images/Result(Be).svg';
-import Ds from '../assets/images/Result(Ds).svg';
-import Security from '../assets/images/Result(Security).svg';
-import Game from '../assets/images/Result(Game).svg';
+import Be from '../assets/images/result(Be).svg';
+import Ds from '../assets/images/result(Ds).svg';
+import Security from '../assets/images/result(Security).svg';
+import Game from '../assets/images/result(Game).svg';
 import startBtn from '../assets/images/startBtn.svg';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
