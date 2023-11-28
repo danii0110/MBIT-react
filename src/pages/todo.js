@@ -1,4 +1,7 @@
-//2. add loading page
-//3. start page refactoring
-//4. res page refactoring
-//5. 사용하지 않는 페이지 삭제
+// start page refactoring
+// loading page refactoring
+// res page refactoring
+// collections page
+
+// add loading page
+// 사용하지 않는 페이지 삭제

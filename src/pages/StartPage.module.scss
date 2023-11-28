@@ -1,0 +1,62 @@
+.Main {
+  margin: 0 auto;
+  text-align: center;
+  width: 430px;
+  height: 932px;
+  background-image: url('../assets/images/background\(Fixed\).svg');
+  position: relative;
+}
+
+.logoArea {
+  padding-top: 113px;
+}
+
+.logoArea > img {
+  width: 314px;
+}
+
+.resultCase img {
+  animation: shake 5s;
+  animation-iteration-count: infinite;
+
+  @keyframes shake {
+    0% {
+      transform: translateY(-30px) rotate(0deg);
+    }
+
+    50% {
+      transform: translateY(0px) rotate(0deg);
+    }
+
+    100% {
+      transform: translateY(-30px) rotate(0deg);
+    }
+  }
+}
+
+.startBtn {
+  position: absolute;
+  top: 730px;
+  left: 98px;
+}
+
+.startBtn:hover {
+  cursor: pointer;
+}
+
+.Staff {
+  position: absolute;
+  top: 833px;
+  left: 155px;
+  font-family: Jua;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  color: #1e1e1e;
+  cursor: pointer;
+}
+
+.Staff:hover {
+  text-decoration: underline;
+}

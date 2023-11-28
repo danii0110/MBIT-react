@@ -1,5 +1,5 @@
 import style from '../styles/Result_illust.module.scss';
-import Fe from '../assets/images/result(Fe).svg';
+import Fe from '../assets/images/frontDeveloper.png';
 
 function FE_illust() {
   return (

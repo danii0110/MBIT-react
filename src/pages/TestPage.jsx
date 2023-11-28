@@ -49,7 +49,6 @@ function TestPage() {
     }
   };
 
-  // const sessionBack = window.sessionStorage.getItem('');
   const backBtn = () => {
     navigate(-1);
   };

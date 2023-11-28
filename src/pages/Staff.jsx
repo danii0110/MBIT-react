@@ -1,22 +1,18 @@
-import style from "../styles/Staff.module.scss";
-import logoImg from "../assets/images/indexLogo.svg";
-import goBack from "../assets/images/backspace.svg";
-import { useNavigate } from "react-router-dom";
+import style from './Staff.module.scss';
+// import logoImg from '../assets/images/indexLogo.svg';
+import logoImg from '../assets/images/logo.png';
+import goBack from '../assets/images/backArrow.png';
+import { useNavigate } from 'react-router-dom';
 
 function Staff() {
   const navigate = useNavigate();
   return (
     <div className={style.Staff}>
       <div className={style.logoArea}>
-        <img src={logoImg} alt="로고" />
+        <img src={logoImg} alt='로고' />
       </div>
 
-      <img
-        className={style.Back}
-        onClick={() => navigate("/")}
-        src={goBack}
-        alt="뒤로가기"
-      />
+      <img className={style.Back} onClick={() => navigate('/')} src={goBack} alt='뒤로가기' />
 
       <div className={style.Be}>
         <p>BACKEND</p>
