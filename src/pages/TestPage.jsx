@@ -49,17 +49,10 @@ function TestPage() {
     }
   };
 
-  // async function updateUserField(type) {
-  //   const response = fetch('http://localhost:3000/pychart/mbits/', {
-  //     method: 'POST',
-  //     body: JSON.stringify(type),
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //   });
-  //   const data = await response.json();
-  //   console.log(data);
-  // }
+  // const sessionBack = window.sessionStorage.getItem('');
+  const backBtn = () => {
+    navigate(-1);
+  };
 
   return (
     <div className={classes.background}>
@@ -69,7 +62,7 @@ function TestPage() {
           <img className={classes.logo} src={logo} alt='logo' />
         </div>
         <div className={classes.bottom}>
-          <img className={classes.backArrow} src={backArrow} alt='back-arrow' />
+          <img className={classes.backArrow} src={backArrow} alt='back-arrow' onClick={backBtn} />
           <div className={classes.progress}>
             {num}
             /10
@@ -111,7 +104,6 @@ function TestPage() {
                       handleOnClick={() => {
                         getScore(item.field);
                         navigate(`/result/${type}`);
-                        //updateUserField();
                       }}
                     >
                       {item.text}
